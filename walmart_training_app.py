@@ -246,10 +246,10 @@ def main():
                             # Train the selected model
                             if model_type == "Auto ARIMA":
                                 model = train_auto_arima(train_data_diff, hyperparams)
-                                model_filename = "auto_arima.pkl"
+                                model_filename = "AutoARIMA.pkl"
                             else:
                                 model = train_exponential_smoothing(train_data_diff, hyperparams)
-                                model_filename = "exponential_smoothing.pkl"
+                                model_filename = "ExponentialSmoothingHoltWinters.pkl"
                             
                             # Make predictions for evaluation
                             if model_type == "Auto ARIMA":
